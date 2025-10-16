@@ -1,10 +1,20 @@
 body {
-    background-color: darkkhaki;
+    background-color: darkkhaki;  /* Hintergrundfarbe der gesamten Seite */
+    color: #222;                  /* Standardtextfarbe (dunkles Grau, angenehmer als Schwarz) */
+    line-height: 1.5;             /* Zeilenhöhe – sorgt für mehr Abstand zwischen Textzeilen */
+    margin: 0;                    /* entfernt den Standardaußenabstand des Browsers */
+    padding: 2rem;                /* Innenabstand zum Rand des Browserfensters (~32px) */
 }
 
+
 header {
-    background-color: firebrick;
-    text-align: left;
-    padding:5cm;
-    
+    background-color: firebrick;  /* Hintergrundfarbe des Headers: ein kräftiges Rot */
+    text-align: left;             /* richtet Text im Header linksbündig aus */
+    padding: 1cm;                 /* Innenabstand: 1 Zentimeter auf allen Seiten (oben, unten, links, rechts) */
+}
+
+
+
+h1 {
+    color: black; /* Überschrift bekommt die Farbe Schwarz */
 }
