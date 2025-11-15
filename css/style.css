@@ -1,11 +1,8 @@
-body {
-    background-color: darkkhaki;  /* Hintergrundfarbe der gesamten Seite */
-    color: #222;                  /* Standardtextfarbe (dunkles Grau, angenehmer als Schwarz) */
-    line-height: 1.5;             /* Zeilenhöhe – sorgt für mehr Abstand zwischen Textzeilen */
-    margin: 0;                    /* entfernt den Standardaußenabstand des Browsers */
-    padding: 2rem;                /* Innenabstand zum Rand des Browserfensters (~32px) */
+nav {
+    background-color: gold;
+    border: 10px dashed lightsalmon;
+    
 }
-
 
 header {
     background-color: firebrick;  /* Hintergrundfarbe des Headers: ein kräftiges Rot */
@@ -13,8 +10,29 @@ header {
     padding: 1cm;                 /* Innenabstand: 1 Zentimeter auf allen Seiten (oben, unten, links, rechts) */
 }
 
-
-
 h1 {
     color: black; /* Überschrift bekommt die Farbe Schwarz */
+}
+
+body {
+    background-color: darkgray;  /* Hintergrundfarbe der gesamten Seite */
+    color: #222;                  /* Standardtextfarbe (dunkles Grau, angenehmer als Schwarz) */
+    line-height: 1.5;             /* Zeilenabstand – sorgt für mehr Abstand zwischen Textzeilen */
+    margin: 0;                    /* entfernt den Standardaußenabstand des Browsers */
+    padding: 0;                /* Innenabstand zum Rand des Browserfensters (~32px) */
+}
+
+main {
+    background-color: orangered;
+    border: 5px solid black;
+    padding: 20px;
+    margin: 0px 20px 5px 20px;
+        
+}
+
+
+
+
+img {
+  margin: 1rem; /* Abstand rund um jedes Bild (ca. 16px) */
 }
