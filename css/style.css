@@ -1,21 +1,51 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+
 nav {
-    background-color: gold;
-    border: 10px dashed lightsalmon;
+    background-color: rgba(255, 217, 0, 0.696);
+    border: 5px dashed lightsalmon;
+    display: flex;
+    justify-content: space-around;
+    padding: 0.5rem;
     
+    
+}
+
+nav a {
+    font-weight: bold;
+    font-size: 1.5rem;
+    border: 2px solid black;
+    padding: 0.5rem;
+    text-decoration: none;
+    background-color: gold;
+    border-radius: 10px;
 }
 
 header {
     background-color: firebrick;  /* Hintergrundfarbe des Headers: ein kräftiges Rot */
     text-align: left;             /* richtet Text im Header linksbündig aus */
-    padding: 1cm;                 /* Innenabstand: 1 Zentimeter auf allen Seiten (oben, unten, links, rechts) */
+    padding: 1.5rem;                 /* Innenabstand: 1 Zentimeter auf allen Seiten (oben, unten, links, rechts) */
 }
 
 h1 {
     color: black; /* Überschrift bekommt die Farbe Schwarz */
+    overflow-wrap: break-word; /* Lange Wörter werden umgebrochen, um Überlauf zu vermeiden */  
+    word-break: break-word;    /* Lange Wörter werden umgebrochen, um Überlauf zu vermeiden */  
+}
+
+img {
+    display: block; /* Bilder werden als Block-Elemente dargestellt */
+    max-width: 100%;
+    height: auto;
+    margin: 1rem auto;
 }
 
 body {
-    background-color: darkgray;  /* Hintergrundfarbe der gesamten Seite */
+    background-color: lightyellow;  /* Hintergrundfarbe der gesamten Seite */
     color: #222;                  /* Standardtextfarbe (dunkles Grau, angenehmer als Schwarz) */
     line-height: 1.5;             /* Zeilenabstand – sorgt für mehr Abstand zwischen Textzeilen */
     margin: 0;                    /* entfernt den Standardaußenabstand des Browsers */
@@ -30,9 +60,59 @@ main {
         
 }
 
+#main-style1 {
+    background-color: lightblue;
+    border: 5px solid black;
+    padding: 20px;
+    margin: auto;
+}
 
+.table-wrapper { /* klassifizierte Tabelle passt sich automatisch an */
+    overflow-x: auto;
+    max-width: 100%;
 
+}
+
+td {
+    overflow-wrap: break-word;
+
+}
+
+#copyr {
+    text-align: start;
+    font-size: 0.8rem;
+    color: gray;
+}
 
 img {
   margin: 1rem; /* Abstand rund um jedes Bild (ca. 16px) */
+}
+
+@media (max-width: 600px) {
+    
+    h1 {
+    font-size: 1.5rem; /* Schriftgröße der Überschrift wird auf 1.5rem (ca. 24px) reduziert */
+    }
+
+    header {
+        padding-left: 1rem;
+        padding-right: 1rem;
+    }
+    
+    nav {
+        flex-direction: column;
+        align-items: stretch;
+
+    }
+
+    main {
+        margin-left: 0;
+        margin-right: 0;
+    }
+
+    img {
+        margin-left: auto;
+        margin-right: auto;
+    }
+
 }
