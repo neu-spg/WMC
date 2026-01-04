@@ -4,12 +4,29 @@
   box-sizing: border-box;
 }
 
+.printer-images {
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.printer-images img {
+    max-width: 250px;
+    height: auto;
+    border: 3px solid black;
+    border-radius: 10px;
+    width: 100%;
+}
+
+a:focus {
+    outline: 2px solid black;
+}
 
 nav {
     background-color: rgba(255, 217, 0, 0.696);
     border: 5px dashed lightsalmon;
-    display: flex;
-    justify-content: space-around;
     padding: 0.5rem;
     
     
@@ -25,9 +42,24 @@ nav a {
     border-radius: 10px;
 }
 
+nav a:hover {
+    background-color: orangered;
+    cursor: pointer;
+}
+
+nav ul {
+    list-style: none;
+}
+
+nav>ul {
+    display: flex;
+    justify-content: space-around;
+}
+
+
+
 header {
     background-color: firebrick;  /* Hintergrundfarbe des Headers: ein kräftiges Rot */
-    text-align: left;             /* richtet Text im Header linksbündig aus */
     padding: 1.5rem;                 /* Innenabstand: 1 Zentimeter auf allen Seiten (oben, unten, links, rechts) */
 }
 
@@ -37,11 +69,20 @@ h1 {
     word-break: break-word;    /* Lange Wörter werden umgebrochen, um Überlauf zu vermeiden */  
 }
 
+header>h1 {
+    text-align: center;
+    font-family: 'Courier New', Courier, monospace;
+    font-style: italic; 
+}
+
 img {
-    display: block; /* Bilder werden als Block-Elemente dargestellt */
+    display: inline; /* Bilder werden als Block-Elemente dargestellt */
+    gap: 15rem;
     max-width: 100%;
     height: auto;
-    margin: 1rem auto;
+    margin: 1rem auto; /* Zentriert das Bild horizontal und fügt oben und unten einen Abstand von 1rem hinzu */
+    border: 5px solid black;
+    border-radius: 20px;
 }
 
 body {
@@ -55,16 +96,24 @@ body {
 main {
     background-color: orangered;
     border: 5px solid black;
-    padding: 20px;
-    margin: 0px 20px 5px 20px;
+    padding: 1rem 3rem;
+    margin: 0.2rem 0.5rem;
         
 }
+
+
 
 #main-style1 {
     background-color: lightblue;
     border: 5px solid black;
     padding: 20px;
     margin: auto;
+}
+
+#pros-cons-wrapper {
+	display: flex;
+	border: 2px solid rgb(255, 111, 0);
+    background-color:argba(255, 255, 255, 0.49);
 }
 
 .table-wrapper { /* klassifizierte Tabelle passt sich automatisch an */
@@ -84,11 +133,8 @@ td {
     color: gray;
 }
 
-img {
-  margin: 1rem; /* Abstand rund um jedes Bild (ca. 16px) */
-}
 
-@media (max-width: 600px) {
+@media (max-width: 608px) {
     
     h1 {
     font-size: 1.5rem; /* Schriftgröße der Überschrift wird auf 1.5rem (ca. 24px) reduziert */
@@ -99,10 +145,21 @@ img {
         padding-right: 1rem;
     }
     
-    nav {
+
+    nav>ul {
         flex-direction: column;
         align-items: stretch;
+        padding: 0.5rem;
 
+    }
+
+    nav>ul>li {
+        margin: 0px 0px 0.5rem 0px;
+    }
+
+    nav>ul>li>a {
+        display: block;
+        text-align: center;
     }
 
     main {
