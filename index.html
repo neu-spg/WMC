@@ -5,6 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet"
           href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
     <title>Tab TITLE</title>
 </head>
 <body>
@@ -13,10 +16,11 @@
     </header>
     <nav class="navbar">
         <ul>    
-            <li><a href="index.html#intro">Der Einstieg</a></li>
+            <li><a href="index.html#intro" class="active">Der Einstieg</a></li>
             <li><a href="index.html#model">Modellauswahl</a></li>
             <li><a href="index.html#compare">Vergleich</a></li>
-            <li><a href="Kontakt.html">Kontakt</a></li>
+            <li><a href="About.html">Über</a></li>
+            <li><a href="index.html#contact">Kontakt</a></li>
         </ul>
     </nav>
     <main>
@@ -44,13 +48,15 @@
             <p> 
                 Im privaten und semiprofessionellen Bereich ist vor allem das FDM-Verfahren (Fused Deposition Modeling) verbreitet. Dabei wird ein Kunststofffaden, das sogenannte Filament, erhitzt und durch eine feine Düse auf die Druckplatte aufgetragen. 
                 Die einzelnen Schichten verbinden sich miteinander und ergeben am Ende das fertige Bauteil. 
+            </p>
             <p>    
-                Häufig verwendete Filamente sind 
+                Häufig verwendete Filamente sind </p>
                 <ul>
                     <li>PLA (Polylactid),</li>
                     <li>PETG (Polyethylenterephthalat-Glykol) oder</li>
                     <li>ABS (Acrylnitril-Butadien-Styrol),</li>
                 </ul>
+            
                 die sich in Stabilität, Temperaturbeständigkeit und Verarbeitbarkeit unterscheiden.
                 Für ein gutes Druckergebnis spielen mehrere Faktoren eine Rolle. Dazu gehören unter anderem 
                 die richtige Drucktemperatur, die Geschwindigkeit, die Schichthöhe sowie eine saubere Haftung auf der Druckplatte.
@@ -147,7 +153,12 @@
     </main>
 
     <footer>
-        <p>© 2026 - etwas verfrüht</p>
+        <hr>
+        <h3 id="contact">Impressum</h3>
+        <p>Max Beispiel<br>
+        Musterstraße 12<br>
+        12345 Musterstadt · Deutschland</p>
+        <p class="copyr">© 2026</p>
     </footer>
 </body>
 

@@ -25,26 +25,37 @@ a:focus {
 }
 
 nav {
-    background-color: rgba(255, 217, 0, 0.696);
-    border: 5px dashed lightsalmon;
+    position: sticky;
+    background-color:#F4EEE6;
+    border-top: 0.0625rem solid #E0D5C8;
+    border-bottom: 0.0625rem solid #E0D5C8;
     padding: 0.5rem;
     
     
 }
 
 nav a {
+    color: #4A3528;
     font-weight: bold;
     font-size: 1.5rem;
     border: 2px solid black;
-    padding: 0.5rem;
+    padding: 0.6rem 1.4rem;
     text-decoration: none;
-    background-color: gold;
+    background-color: transparent;
     border-radius: 10px;
 }
 
+nav a.active {
+  color: #8B6A57;
+  font-weight: 500;
+  border-bottom: 2px solid #8B6A57;
+}
+
+
 nav a:hover {
-    background-color: orangered;
+    background-color: #E9E0D4;
     cursor: pointer;
+    border-radius: 0.375rem;
 }
 
 nav ul {
@@ -59,8 +70,8 @@ nav>ul {
 
 
 header {
-    background-color: firebrick;  /* Hintergrundfarbe des Headers: ein kräftiges Rot */
-    padding: 1.5rem;                 /* Innenabstand: 1 Zentimeter auf allen Seiten (oben, unten, links, rechts) */
+    background-color: #8B6A57;  /* Hintergrundfarbe des Headers: ein kräftiges Rot */
+    padding: 1.5rem;              /* Innenabstand: 1 Zentimeter auf allen Seiten (oben, unten, links, rechts) */
 }
 
 h1 {
@@ -86,34 +97,44 @@ img {
 }
 
 body {
-    background-color: lightyellow;  /* Hintergrundfarbe der gesamten Seite */
-    color: #222;                  /* Standardtextfarbe (dunkles Grau, angenehmer als Schwarz) */
-    line-height: 1.5;             /* Zeilenabstand – sorgt für mehr Abstand zwischen Textzeilen */
+    background-color: #FAF7F2;       /* Hintergrundfarbe der gesamten Seite */
+    color: #2F2A26;                  /* Standardtextfarbe (dunkles Grau, angenehmer als Schwarz) */
+    line-height: 1.5;                /* Zeilenabstand – sorgt für mehr Abstand zwischen Textzeilen */
     margin: 0;                    /* entfernt den Standardaußenabstand des Browsers */
-    padding: 0;                /* Innenabstand zum Rand des Browserfensters (~32px) */
+    padding: 0;   
+    font-family: 'Inter', sans-serif;             /* Schriftart für den gesamten Text */
 }
 
 main {
-    background-color: orangered;
+    background-color: #FBF8F3;
     border: 5px solid black;
     padding: 1rem 3rem;
     margin: 0.2rem 0.5rem;
+    ;
         
 }
 
-
+footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
 
 #main-style1 {
-    background-color: lightblue;
+    background-color: #fff1da;
     border: 5px solid black;
     padding: 20px;
     margin: auto;
 }
 
+#pros h3, #cons h3 {
+	padding-left: 2.5rem;
+}
+
 #pros-cons-wrapper {
 	display: flex;
-	border: 2px solid rgb(255, 111, 0);
-    background-color:argba(255, 255, 255, 0.49);
+	border: 2px solid rgba(255, 111, 0, 0.816);
+    background-color:rgba(255, 255, 255, 0.49);
 }
 
 .table-wrapper { /* klassifizierte Tabelle passt sich automatisch an */
@@ -134,7 +155,7 @@ td {
 }
 
 
-@media (max-width: 608px) {
+@media (max-width: 768px) {
     
     h1 {
     font-size: 1.5rem; /* Schriftgröße der Überschrift wird auf 1.5rem (ca. 24px) reduziert */
@@ -170,6 +191,10 @@ td {
     img {
         margin-left: auto;
         margin-right: auto;
+    }
+
+    #pros-cons-wrapper {
+        flex-direction: column;
     }
 
 }
