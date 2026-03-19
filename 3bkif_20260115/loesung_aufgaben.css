@@ -1,0 +1,75 @@
+/* 
+
+Lösen Sie die 6 Aufgaben, die im HTML beschrieben sind.
+Schreiben Sie Ihren CSS-Code unterhalb der jeweiligen Aufgabe.
+*/
+
+
+/* AUFGABE 1: Content-Box Styling */
+
+article section {
+	background-color: lightgray;
+	font-family: arial, sans-serif;
+	font-size: 0.9rem;
+	padding: 1.5rem;
+	border: 1px solid gray;
+	border-radius: 10px;
+}
+
+/* AUFGABE 2: Submit Button Styling */
+
+#submit-btn {
+	background-color: darkcyan;
+	color: white;
+	padding: 0.8rem 2rem;
+	border: none;
+	border-radius: 5px;
+}
+
+/* AUFGABE 3: Highlight Box Grid-Positionierung */
+
+#highlight-box {
+	background-color: #d1ecf1;
+	border: 2px solid #0c5460;
+	padding: 1rem;
+	grid-row: 3;
+	grid-column: 1/-1;
+}
+
+/* AUFGABE 4: Nav-Menu Flex-Layout */
+
+.nav-menu {
+	display: flex;
+	gap: 1rem;
+	padding: 1rem;
+	background-color: #ecf0f1;
+	grid-column: 1 / -1;
+	justify-content: space-evenly;
+	flex-wrap: wrap;
+	align-items: center;
+}
+
+/* AUFGABE 5: Footer-Links Hover-Effekt */
+
+footer a:hover {
+	color: orange;
+	text-decoration: underline;
+	transition: color 0.3s ease, text-decoration 0.3s ease;
+}
+
+/* AUFGABE 6: Komplexer Selektor mit Attribut und Kind-Kombinator */
+
+article.testbereich section[data-topic^="css-adv"] {
+  border: 2px dashed red;
+}
+
+article.testbereich section[data-topic^="css-adv"] li:nth-child(3) > a {
+  color: green;
+  font-weight: bold;
+  transition: color 1s ease;
+}
+
+article.testbereich section[data-topic^="css-adv"] li:nth-child(3) > a:hover {
+  color: red;
+}
+

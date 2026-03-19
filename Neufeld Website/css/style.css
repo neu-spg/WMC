@@ -1,0 +1,200 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+.printer-images {
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.printer-images img {
+    max-width: 250px;
+    height: auto;
+    border: 3px solid black;
+    border-radius: 10px;
+    width: 100%;
+}
+
+a:focus {
+    outline: 2px solid black;
+}
+
+nav {
+    position: sticky;
+    background-color:#F4EEE6;
+    border-top: 0.0625rem solid #E0D5C8;
+    border-bottom: 0.0625rem solid #E0D5C8;
+    padding: 0.5rem;
+    
+    
+}
+
+nav a {
+    color: #4A3528;
+    font-weight: bold;
+    font-size: 1.5rem;
+    border: 2px solid black;
+    padding: 0.6rem 1.4rem;
+    text-decoration: none;
+    background-color: transparent;
+    border-radius: 10px;
+}
+
+nav a.active {
+  color: #8B6A57;
+  font-weight: 500;
+  border-bottom: 2px solid #8B6A57;
+}
+
+
+nav a:hover {
+    background-color: #E9E0D4;
+    cursor: pointer;
+    border-radius: 0.375rem;
+}
+
+nav ul {
+    list-style: none;
+}
+
+nav>ul {
+    display: flex;
+    justify-content: space-around;
+}
+
+
+
+header {
+    background-color: #8B6A57;  /* Hintergrundfarbe des Headers: ein kräftiges Rot */
+    padding: 1.5rem;              /* Innenabstand: 1 Zentimeter auf allen Seiten (oben, unten, links, rechts) */
+}
+
+h1 {
+    color: black; /* Überschrift bekommt die Farbe Schwarz */
+    overflow-wrap: break-word; /* Lange Wörter werden umgebrochen, um Überlauf zu vermeiden */  
+    word-break: break-word;    /* Lange Wörter werden umgebrochen, um Überlauf zu vermeiden */  
+}
+
+header>h1 {
+    text-align: center;
+    font-family: 'Courier New', Courier, monospace;
+    font-style: italic; 
+}
+
+img {
+    display: inline; /* Bilder werden als Block-Elemente dargestellt */
+    gap: 15rem;
+    max-width: 100%;
+    height: auto;
+    margin: 1rem auto; /* Zentriert das Bild horizontal und fügt oben und unten einen Abstand von 1rem hinzu */
+    border: 5px solid black;
+    border-radius: 20px;
+}
+
+body {
+    background-color: #FAF7F2;       /* Hintergrundfarbe der gesamten Seite */
+    color: #2F2A26;                  /* Standardtextfarbe (dunkles Grau, angenehmer als Schwarz) */
+    line-height: 1.5;                /* Zeilenabstand – sorgt für mehr Abstand zwischen Textzeilen */
+    margin: 0;                    /* entfernt den Standardaußenabstand des Browsers */
+    padding: 0;   
+    font-family: 'Inter', sans-serif;             /* Schriftart für den gesamten Text */
+}
+
+main {
+    background-color: #FBF8F3;
+    border: 5px solid black;
+    padding: 1rem 3rem;
+    margin: 0.2rem 0.5rem;
+    ;
+        
+}
+
+footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#main-style1 {
+    background-color: #fff1da;
+    border: 5px solid black;
+    padding: 20px;
+    margin: auto;
+}
+
+#pros h3, #cons h3 {
+	padding-left: 2.5rem;
+}
+
+#pros-cons-wrapper {
+	display: flex;
+	border: 2px solid rgba(255, 111, 0, 0.816);
+    background-color:rgba(255, 255, 255, 0.49);
+}
+
+.table-wrapper { /* klassifizierte Tabelle passt sich automatisch an */
+    overflow-x: auto;
+    max-width: 100%;
+
+}
+
+td {
+    overflow-wrap: break-word;
+
+}
+
+#copyr {
+    text-align: start;
+    font-size: 0.8rem;
+    color: gray;
+}
+
+
+@media (max-width: 768px) {
+    
+    h1 {
+    font-size: 1.5rem; /* Schriftgröße der Überschrift wird auf 1.5rem (ca. 24px) reduziert */
+    }
+
+    header {
+        padding-left: 1rem;
+        padding-right: 1rem;
+    }
+    
+
+    nav>ul {
+        flex-direction: column;
+        align-items: stretch;
+        padding: 0.5rem;
+
+    }
+
+    nav>ul>li {
+        margin: 0px 0px 0.5rem 0px;
+    }
+
+    nav>ul>li>a {
+        display: block;
+        text-align: center;
+    }
+
+    main {
+        margin-left: 0;
+        margin-right: 0;
+    }
+
+    img {
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    #pros-cons-wrapper {
+        flex-direction: column;
+    }
+
+}
