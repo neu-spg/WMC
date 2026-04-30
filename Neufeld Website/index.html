@@ -19,7 +19,7 @@
             <li><a href="index.html#intro" class="active">Der Einstieg</a></li>
             <li><a href="index.html#model">Modellauswahl</a></li>
             <li><a href="index.html#compare">Vergleich</a></li>
-            <li><a href="About.html">Über</a></li>
+            <li><a href="about.html">Über</a></li>
             <li><a href="index.html#contact">Kontakt</a></li>
         </ul>
     </nav>
@@ -49,23 +49,89 @@
                 Im privaten und semiprofessionellen Bereich ist vor allem das FDM-Verfahren (Fused Deposition Modeling) verbreitet. Dabei wird ein Kunststofffaden, das sogenannte Filament, erhitzt und durch eine feine Düse auf die Druckplatte aufgetragen. 
                 Die einzelnen Schichten verbinden sich miteinander und ergeben am Ende das fertige Bauteil. 
             </p>
-            <p>    
-                Häufig verwendete Filamente sind </p>
+            <p>Häufig verwendete Filamente sind:</p>
                 <ul>
                     <li>PLA (Polylactid),</li>
                     <li>PETG (Polyethylenterephthalat-Glykol) oder</li>
                     <li>ABS (Acrylnitril-Butadien-Styrol),</li>
                 </ul>
-            
+            <p>
                 die sich in Stabilität, Temperaturbeständigkeit und Verarbeitbarkeit unterscheiden.
                 Für ein gutes Druckergebnis spielen mehrere Faktoren eine Rolle. Dazu gehören unter anderem 
                 die richtige Drucktemperatur, die Geschwindigkeit, die Schichthöhe sowie eine saubere Haftung auf der Druckplatte.
+            </p>
             <p>
                 Gerade für Einsteiger ist es wichtig, diese Grundlagen zu verstehen, 
                 um typische Fehler wie schlechte Haftung, verzogene Drucke oder unsaubere Oberflächen zu vermeiden.
                 Der 3D-Druck bietet dadurch eine große gestalterische Freiheit und ermöglicht es, individuelle Objekte, 
                 Ersatzteile oder Prototypen kostengünstig selbst herzustellen – setzt aber auch ein gewisses Maß an 
                 Experimentierfreude und Lernbereitschaft voraus.
+            </p>
+        </section>
+        <section id="process">
+            <h2>Der Druckprozess Schritt für Schritt</h2>
+
+            <div class="step">
+                <h3>1. Modell auswählen</h3>
+                <p>
+                    Der erste Schritt beginnt mit der Auswahl eines 3D-Modells. Plattformen wie Thingiverse oder Printables
+                    bieten tausende kostenlose Designs. Wichtig ist, ein Modell zu wählen, das zum eigenen Drucker und Erfahrungslevel passt.
+                </p>
+            </div>
+
+            <div class="step">
+                <h3>2. Slicen</h3>
+                <p>
+                    Das Modell wird im Slicer in einzelne Schichten zerlegt. Hier stellst du Parameter wie Drucktemperatur,
+                    Geschwindigkeit und Schichthöhe ein – entscheidend für die Qualität.
+                </p>
+            </div>
+
+            <div class="step">
+                <h3>3. Druck starten</h3>
+                <p>
+                    Der Drucker beginnt, das Objekt Schicht für Schicht aufzubauen. Die ersten Layer sind besonders kritisch,
+                    da sie über die Haftung entscheiden.
+                </p>
+            </div>
+
+            <div class="step">
+                <h3>4. Nachbearbeitung</h3>
+                <p>
+                    Nach dem Druck werden Supports entfernt, Oberflächen geglättet oder Teile zusammengefügt.
+                </p>
+            </div>
+        </section>
+        <section id="mistakes">
+            <h2>Typische Anfängerfehler</h2>
+
+            <p>Gerade am Anfang passieren viele kleine Fehler, die schnell frustrieren können.</p>
+
+            <h3>Schlechte Haftung</h3>
+            <p>
+                Wenn das Modell nicht richtig auf der Druckplatte haftet, verschiebt es sich während des Drucks.
+                Ursachen sind oft eine falsche Temperatur oder eine verschmutzte Druckplatte.
+            </p>
+
+            <h3>Warping</h3>
+            <p>
+                Dabei verzieht sich das Bauteil, weil sich das Material beim Abkühlen zusammenzieht.
+                Besonders bei ABS tritt dieses Problem häufig auf.
+            </p>
+
+            <h3>Stringing</h3>
+            <p>
+                Feine Fäden zwischen Druckteilen entstehen durch zu hohe Temperaturen oder falsche Retract-Einstellungen.
+            </p>
+
+            <h3>Überhänge</h3>
+            <p>
+                Ohne Stützstrukturen können Überhänge absacken oder unsauber werden.
+            </p>
+
+            <h3>Zu schnelle Druckgeschwindigkeit</h3>
+            <p>
+                Ein schneller Druck spart Zeit, kann aber die Qualität stark verschlechtern.
             </p>
         </section>
         <section id="pros-cons">
@@ -121,6 +187,14 @@
                 </a>
             </div>
         </section>
+        <section id="gallery">
+            <h2>Beispiele aus der Praxis</h2>
+            <div class="printer-images">
+                <img src="https://www.cnc24.com/wp-content/uploads/2022/06/3D-printing_4@2x-1024x645.jpg" alt="3D Druck">
+                <img src="https://www.obico.io/assets/images/3d-benchy-z-seam-28824d66559b17b6721c9413f3a4818d.png" alt="3D Druck Detail">
+                <img src="https://www.vhs.at/files/images/block_image-with-caption/8347-desktop.jpg" alt="3D Druck Maschine">
+            </div>
+        </section>
         <section id="compare">
             <h2>Vergleich der Modelle</h2>
             <div class="table-wrapper">
@@ -160,6 +234,7 @@
         12345 Musterstadt · Deutschland</p>
         <p class="copyr">© 2026</p>
     </footer>
+    <script src="script.js"></script>
 </body>
 
 </html>
