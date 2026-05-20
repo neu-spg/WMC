@@ -16,3 +16,5 @@ window.addEventListener("scroll", showOnScroll);
 
 // direkt beim Laden einmal ausführen
 showOnScroll();
+
+
