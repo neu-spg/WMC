@@ -3,23 +3,28 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="icons/faviconsq.png">
     <link rel="stylesheet"
           href="css/style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
-    <title>Tab TITLE</title>
+    <title>3D Drucker für Jedermann</title>
 </head>
 <body>
     <header>
         <h1>3D Drucker für Jedermann</h1>
-    </header>
+        <p class="header-subtitle">
+            Verständliche Informationen, Filamente und Modellideen für Einsteiger.
+        </p>
+    </header>       
     <nav class="navbar">
         <ul>    
             <li><a href="index.html#intro" class="active">Der Einstieg</a></li>
             <li><a href="index.html#model">Modellauswahl</a></li>
             <li><a href="index.html#compare">Vergleich</a></li>
             <li><a href="materials.html">Filamente</a></li>
+            <li><a href="models.html">Modelle</a></li>
             <li><a href="about.html">Über</a></li>
             <li><a href="index.html#contact">Kontakt</a></li>
         </ul>
@@ -75,7 +80,7 @@
             <div class="step">
                 <h3>1. Modell auswählen</h3>
                 <p>
-                    Der erste Schritt beginnt mit der Auswahl eines 3D-Modells. Plattformen wie Thingiverse oder Printables
+                    Der erste Schritt beginnt mit der Auswahl eines 3D-Modells. Plattformen wie <a href="https://www.thingiverse.com" target="_blank">Thingiverse</a> oder <a href="https://www.printables.com" target="_blank">Printables</a>
                     bieten tausende kostenlose Designs. Wichtig ist, ein Modell zu wählen, das zum eigenen Drucker und Erfahrungslevel passt.
                 </p>
             </div>
@@ -188,14 +193,6 @@
                 </a>
             </div>
         </section>
-        <section id="gallery">
-            <h2>Beispiele aus der Praxis</h2>
-            <div class="printer-images">
-                <img src="https://www.cnc24.com/wp-content/uploads/2022/06/3D-printing_4@2x-1024x645.jpg" alt="3D Druck">
-                <img src="https://www.obico.io/assets/images/3d-benchy-z-seam-28824d66559b17b6721c9413f3a4818d.png" alt="3D Druck Detail">
-                <img src="https://www.vhs.at/files/images/block_image-with-caption/8347-desktop.jpg" alt="3D Druck Maschine">
-            </div>
-        </section>
         <section id="compare">
             <h2>Vergleich der Modelle</h2>
             <div class="table-wrapper">
@@ -235,7 +232,11 @@
         12345 Musterstadt · Deutschland</p>
         <p class="copyr">© 2026</p>
     </footer>
+    <button id="scroll-top-btn">
+        <img src="icons/nozzle-up3.png" alt="Nach oben">
+    </button>
     <script src="script.js"></script>
+    <script src="scroll-top.js"></script>
 </body>
 
 </html>

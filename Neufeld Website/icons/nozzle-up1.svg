@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" fill="none">
+
+  <circle cx="32" cy="32" r="28" stroke="currentColor" stroke-width="3" opacity="0.15"></circle>
+
+  <!-- Arrow -->
+  <path d="M32 14
+           L18 28
+           H26
+           V42
+           H38
+           V28
+           H46
+           Z" fill="currentColor"></path>
+
+  <!-- Nozzle -->
+  <path d="M27 42
+           H37
+           V46
+           H39
+           L32 56
+           L25 46
+           H27
+           Z" fill="currentColor"></path>
+</svg>

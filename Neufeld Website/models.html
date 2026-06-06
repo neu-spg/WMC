@@ -6,7 +6,7 @@
     <link rel="icon" href="icons/faviconsq.png">
     <link rel="stylesheet"
           href="css/style.css">
-    <title>Filamente | 3D Drucker für Jedermann</title>
+    <title>Modelle | 3D Drucker für Jedermann</title>
 </head>
 <body>
     <header>
@@ -17,8 +17,8 @@
             <li><a href="index.html">Der Einstieg</a></li>
             <li><a href="index.html#model">Modellauswahl</a></li>
             <li><a href="index.html#compare">Vergleich</a></li>
-            <li><a href="materials.html" class="active">Filamente</a></li>
-            <li><a href="models.html">Modelle</a></li>
+            <li><a href="materials.html">Filamente</a></li>
+            <li><a href="models.html" class="active">Modelle</a></li>
             <li><a href="about.html">Über</a></li>
             <li><a href="about.html#contact1">Kontakt</a></li>
         </ul>
@@ -26,24 +26,24 @@
 
 
     <main id="main-style1">
-            <h2>Beliebte Filamente</h2>
-            
-        <button id="load-pro-materials">
-                Profi-Filamente anzeigen
-        </button>
+        <h2>Beispielmodelle</h2>
+    
+        <select id="theme-select">
+            <option value="Mix">Mix</option>
+            <option value="Bike">Bike</option>
+            <option value="Easter">Easter</option>
+            <option value="Saugroboter">Saugroboter</option>
+            <option value="Sensory Play">Sensory Play</option>
+        </select>
 
-        <div id="materials-wrapper">
-            <div id="materials-container"></div>
-
-            <div id="pro-materials-container"></div>
-        </div>
+        <div id="models-container"></div>
     </main>
     <footer>
     </footer>
     <button id="scroll-top-btn">
         <img src="icons/nozzle-up3.png" alt="Nach oben">
     </button>
-    <script src="materials.js"></script>
+    <script src="models.js"></script>
     <script src="scroll-top.js"></script>
 </body>
 </html>

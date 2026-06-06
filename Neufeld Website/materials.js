@@ -1,4 +1,4 @@
-const materials = [ //Array mit Informationen zu verschiedenen Filamenten
+const materials = [
   {
     name: "PLA",
     description: "Einfach zu drucken und ideal für Einsteiger."
@@ -34,11 +34,12 @@ const proMaterials = [
 
 const container = document.getElementById("materials-container"); // holt <div id="materials-container"></div> aus html und speichert es in Variable
 
+const proContainer = document.getElementById("pro-materials-container");
+
 function renderMaterials(materialArray) { // erzeugt Karten für ein beliebiges Material-Array
 
-  //container.innerHTML = ""; // leert zuerst den Container
 
-  materialArray.forEach(material => { // geht durch alle Materialien
+  materialArray.forEach(material => { 
 
   const card = document.createElement("div"); // Java erzeugt im Hintergrund ein neues <div> Element -> DOM Node
 
@@ -59,9 +60,14 @@ function renderMaterials(materialArray) { // erzeugt Karten für ein beliebiges 
   card.appendChild(title); // fügt die Überschrift in die Karte ein
   card.appendChild(text); // fügt den Beschreibungstext in die Karte ein
 
-  container.appendChild(card); // fügt das neue div in den Container ein
+  if (materialArray === proMaterials) {
+    proContainer.appendChild(card);
+    } 
+    else {
+    container.appendChild(card);
+    }
 
-});
+  });
 }
 
 renderMaterials(materials); // zeigt beim Laden die normalen Filamente an
@@ -77,9 +83,9 @@ button.addEventListener("click", () => {
 
     renderMaterials(proMaterials); // zeigt Profi-Filamente an
 
-    button.textContent = "Profi-Filamente ausblenden"; // ändert den Button-Text
+    proContainer.classList.add("show"); // macht den Profi-Container sichtbar
 
-    //const proCards = document.querySelectorAll(".material-card");//Suche alle HTML-Elemente mit der Klasse material-card.
+    button.textContent = "Profi-Filamente ausblenden"; // ändert den Button-Text
 
     showingProMaterials = true; // merkt sich den neuen Zustand
 
@@ -90,6 +96,8 @@ button.addEventListener("click", () => {
         proCards.forEach(card => { // geht durch alle Profi-Karten
 
         card.remove(); // entfernt die Karte aus dem DOM
+
+        proContainer.classList.remove("show"); // versteckt den Profi-Container
 
 });
 

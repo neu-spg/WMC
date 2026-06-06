@@ -1,0 +1,116 @@
+{
+  "Mix": [
+    {
+      "name": "3D Benchy",
+      "image": "3dmodels/benchy.webp",
+      "url": "https://makerworld.com/de/models/40146-benchy-bambu-pla-basic#profileId-109644"
+    },
+    {
+      "name": "Battery Dispenser",
+      "image": "3dmodels/battery-dispenser.webp",
+      "url": "https://www.printables.com/model/741222-battery-holder-for-aa-aaa-wall-mounted-dispenser?lang=de"
+    },
+    {
+      "name": "Desk Organizer",
+      "image": "3dmodels/desk-organizer.webp",
+      "url": "https://www.printables.com/model/201969-mechanical-pen-cup-desk-toy"
+    },
+    {
+      "name": "Wall Art",
+      "image": "3dmodels/wall-art.avif",
+      "url": "https://all3dp.com/2/3d-printed-wall-art-all-you-need-to-know/"
+    }
+  ],
+
+  "Bike": [
+    {
+      "name": "Airtag Mount",
+      "image": "3dmodels/bike/airtag_mount.webp",
+      "url": "https://www.printables.com/model/1380380-airtag-bike-mount-track-your-bike"
+    },
+    {
+      "name": "Handlebar Dinos",
+      "image": "3dmodels/bike/handlebar_dinos.webp",
+      "url": "https://www.printables.com/model/1393698-flexidinos-bikebuddies-print-in-place-articulated"
+    },
+    {
+      "name": "Handlebar",
+      "image": "3dmodels/bike/handlebar.webp",
+      "url": "https://www.printables.com/model/1381253-mtb-handlebar-rest"
+    },
+    {
+      "name": "Spray Nozzle",
+      "image": "3dmodels/bike/spraynozzle.webp",
+      "url": "https://www.printables.com/model/1391935-chain-spray-nozzle-360deg"
+    }
+  ],
+
+  "Easter": [
+    {
+      "name": "Chicken",
+      "image": "3dmodels/easter/chicken.webp",
+      "url": "https://www.printables.com/model/1270429-quail-egg-cup"
+    },
+    {
+      "name": "Faberge Egg",
+      "image": "3dmodels/easter/faberge.webp",
+      "url": "https://www.printables.com/model/1258968-faberge-egg-maze-container-with-or-without-mmu"
+    },
+    {
+      "name": "Knitted Bunny",
+      "image": "3dmodels/easter/knittedbunny.webp",
+      "url": "https://www.printables.com/model/1267004-easter-crochetweaved-bunny"
+    },
+    {
+      "name": "Modern Bunny",
+      "image": "3dmodels/easter/modernbunny.webp",
+      "url": "https://www.printables.com/model/1215055-easter-bunny-folded-ear"
+    }
+  ],
+
+  "Saugroboter": [
+    {
+      "name": "Eyes",
+      "image": "3dmodels/saugroboter/eyes.webp",
+      "url": "https://www.printables.com/model/1400356-roborock-s5-vacuum-eyes"
+    },
+    {
+      "name": "Ramp",
+      "image": "3dmodels/saugroboter/ramp.webp",
+      "url": "https://www.printables.com/model/1405743-modular-ramp"
+    },
+    {
+      "name": "Sign",
+      "image": "3dmodels/saugroboter/sign.webp",
+      "url": "https://www.printables.com/model/1407178-robot-vacuum-only-parking-sign-manual-automatic-mu"
+    },
+    {
+      "name": "Storage",
+      "image": "3dmodels/saugroboter/storage.webp",
+      "url": "https://www.printables.com/model/1415642-dreame-l10s-ultra-heat-gen-2-tools-storage"
+    }
+  ],
+
+  "Sensory Play": [
+    {
+      "name": "Beach",
+      "image": "3dmodels/sensory_play/beach.webp",
+      "url": "https://www.printables.com/model/1634921-beach-masonry-toy-set-build-sand-castles"
+    },
+    {
+      "name": "Emojis",
+      "image": "3dmodels/sensory_play/emojis.webp",
+      "url": "https://www.printables.com/model/1628552-emoji-mood-stamps"
+    },
+    {
+      "name": "Montessori Sensorik",
+      "image": "3dmodels/sensory_play/montessori.webp",
+      "url": "https://www.printables.com/model/1629159-montessori-sensory-playset"
+    },
+    {
+      "name": "Tree",
+      "image": "3dmodels/sensory_play/tree.webp",
+      "url": "https://www.printables.com/model/1610335-fidget-world-apple-tree-clicky-fidget-toy"
+    }
+  ]
+}

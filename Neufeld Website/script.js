@@ -1,3 +1,5 @@
+console.log("script geladen");
+
 const elements = document.querySelectorAll("section");
 
 function showOnScroll() {
@@ -16,5 +18,7 @@ window.addEventListener("scroll", showOnScroll);
 
 // direkt beim Laden einmal ausführen
 showOnScroll();
+
+
 
 

@@ -1,0 +1,45 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128">
+
+  <!-- Arrow / Heatsink -->
+  <path d="
+    M64 10
+    L24 50
+    H38
+    V92
+    H90
+    V50
+    H104
+    Z" fill="#59d83b"></path>
+
+  <!-- Mounting wings -->
+  <rect x="24" y="50" width="14" height="16" rx="2" fill="#59d83b"></rect>
+  <rect x="90" y="50" width="14" height="16" rx="2" fill="#59d83b"></rect>
+
+  <circle cx="31" cy="58" r="4" fill="#111"></circle>
+  <circle cx="97" cy="58" r="4" fill="#111"></circle>
+
+  <!-- Cooling slots left -->
+  <g fill="#2b9e1f">
+    <rect x="44" y="50" width="14" height="3" rx="1.5"></rect>
+    <rect x="44" y="60" width="14" height="3" rx="1.5"></rect>
+    <rect x="44" y="70" width="14" height="3" rx="1.5"></rect>
+    <rect x="44" y="80" width="14" height="3" rx="1.5"></rect>
+
+    <rect x="70" y="50" width="14" height="3" rx="1.5"></rect>
+    <rect x="70" y="60" width="14" height="3" rx="1.5"></rect>
+    <rect x="70" y="70" width="14" height="3" rx="1.5"></rect>
+    <rect x="70" y="80" width="14" height="3" rx="1.5"></rect>
+  </g>
+
+  <!-- Heatblock -->
+  <rect x="40" y="92" width="48" height="16" rx="2" fill="#c6ccd2"></rect>
+
+  <!-- Nozzle -->
+  <rect x="56" y="108" width="16" height="8" fill="#d89b18"></rect>
+
+  <path d="
+    M56 116
+    H72
+    L64 128
+    Z" fill="#d89b18"></path>
+</svg>
