@@ -16,9 +16,28 @@ function showOnScroll() {
 
 window.addEventListener("scroll", showOnScroll);
 
-// direkt beim Laden einmal ausführen
+
 showOnScroll();
 
 
+fetch("https://wttr.in/Vienna?format=j1")
+  .then(response => response.json())
+  .then(data => {
+
+    document.getElementById("weather-box").innerHTML =
+      `<h3>🌤️ Wien</h3>
+       <p>🌡️ ${data.current_condition[0].temp_C} °C</p>
+       <p>💧 ${data.current_condition[0].humidity} %</p>`;
+
+  })
+  .catch(error => {
+
+    document.getElementById("weather-box").innerHTML =
+      `<h3>🌤️ Wien</h3>
+       <p>Wetterdaten momentan nicht verfügbar.</p>`;
+
+    console.error(error);
+
+  });
 
 

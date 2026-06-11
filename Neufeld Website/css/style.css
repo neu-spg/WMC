@@ -85,7 +85,7 @@
     background-color: #fdfaf5;
 }
 
-.table-wrapper { /* klassifizierte Tabelle passt sich automatisch an */
+.table-wrapper { 
     overflow-x: auto;
     max-width: 100%;
 
@@ -143,6 +143,8 @@ nav>ul {
 
 
 header {
+    position: relative;
+
     background-image: url("../icons/headernozzle.png");
     background-size: cover;
     background-position: left center;
@@ -333,6 +335,49 @@ footer {
     outline: 2px solid #2F2A26;
 }
 
+#weather-box {
+    position: absolute;
+
+    top: 15px;
+    right: 20px;
+
+    background: rgba(255,255,255,0.9);
+
+    padding: 0.8rem 1rem;
+
+    border-left: 5px solid #8B6A57;
+    border-radius: 10px;
+
+    box-shadow: 0 4px 12px rgba(0,0,0,0.12);
+
+    font-size: 0.9rem;
+
+    max-width: 220px;
+}
+
+#weather-tip {
+    position: absolute;
+
+    top: 310px;
+    right: 20px;
+
+    width: 280px;
+
+    background: #fdfaf5;
+
+    padding: 1rem;
+
+    border-left: 5px solid #8B6A57;
+    border-radius: 10px;
+
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+
+#weather-tip h4 {
+    margin-top: 0;
+    margin-bottom: 0.5rem;
+}
+
 td {
     overflow-wrap: break-word;
 
@@ -399,6 +444,18 @@ section.visible {
 
     #pros-cons-wrapper {
         flex-direction: column;
+    }
+
+    #weather-box {
+    position: static;
+    margin-top: 1rem;
+    max-width: none;
+}
+
+    #weather-tip {
+        position: static;
+        width: auto;
+        margin: 1rem;
     }
 
 }
